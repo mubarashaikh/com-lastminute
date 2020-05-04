@@ -45,21 +45,21 @@ public class Browsers extends Driver {
     public void launchBrowser(String browser){
         //1. switch statement, 2. set the pages properties here
         switch (browser){
-            case"Chrome":
+            case "Chrome":
                 driver  = initChrome();
                 break;
-            case"HeadlessChrome":
+            case "HeadlessChrome":
                 driver= initHeadlessChrome();
                 break;
-            case"Firefox":
+            case "Firefox":
                 driver = initFirefox();
                 break;
-            case"HeadlessFirefox":
+            case "HeadlessFirefox":
                 driver= initHeadlessFirefox();
                 break;
-            case"ie":
-            case"IE":
-            case"InternetExplorer":
+            case "ie":
+            case "IE":
+            case "InternetExplorer":
                 driver= initInternetExplorer();
                 break;
             default:
