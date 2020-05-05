@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends BasePage{
+public class HomePage extends BasePage {
 
-    public HomePage (WebDriver driver){
+    public HomePage (WebDriver driver)
+    {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

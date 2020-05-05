@@ -1,19 +1,18 @@
 package com.lastminute.hooks;
 
 import com.lastminute.common.Browsers;
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
-//1. create setup method(launchBrowser) 2. teardown methods(closeBrowser)
 public class Hook extends Browsers {
     @Before
-    public void setup(){
-
+    public void setup()
+    {
         launchBrowser("Chrome");
     }
     @After
-    public void tearDown(){
-
-        closeBrowser();
+    public void tearDown()
+    {
+        //closeBrowser();
     }
 }
