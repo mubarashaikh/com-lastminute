@@ -18,8 +18,8 @@ public class SearchFlightsSteps extends BasePage {
     }
 
     @When("i select return type as {string}")
-    public void i_select_return_type_as(String string) {
-
+    public void i_select_return_type_as(String frlyingFrom) {
+        homePage.enterFlyFrom(frlyingFrom);
     }
 
     @When("i enter from location as {string}")

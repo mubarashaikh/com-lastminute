@@ -12,10 +12,17 @@ public class HomePage extends BasePage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+   @FindBy(css = "body > div.as-oil.light > div > div > div.as-oil-l-row.as-oil-l-buttons > div:nth-child(1) > button")
+    private WebElement acceptButtonOfPopup;
+
+
     @FindBy(css = "#input-33gs6")
     private WebElement flightFrom;
 
+
     public void enterFlyFrom(String flyingFrom){
+        acceptButtonOfPopup.click();
         flightFrom.clear();
         flightFrom.sendKeys(flyingFrom);
     }
